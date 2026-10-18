@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
@@ -20,7 +21,6 @@ import {
   ListFilter,
   LoaderCircle,
   Monitor,
-  Orbit,
   Play,
   Radio,
   Search,
@@ -179,7 +179,13 @@ export function Workspace({ view }: { view: View }) {
       <header className="topbar">
         <Link href="/" className="brand">
           <span className="brand-mark">
-            <Orbit size={25} />
+            <Image
+              src="/brand/saitan-logo.png"
+              alt="赛探 AI Logo"
+              width={48}
+              height={48}
+              priority
+            />
           </span>
           <span>
             赛探 <b>AI</b>
@@ -387,7 +393,14 @@ export function Workspace({ view }: { view: View }) {
       </main>
       <footer>
         <span>
-          <Orbit size={14} /> 赛探 AI <span className="subtle">/</span>{" "}
+          <Image
+            src="/brand/saitan-logo.png"
+            alt=""
+            width={22}
+            height={22}
+            className="footer-brand-mark"
+          />{" "}
+          赛探 AI <span className="subtle">/</span>{" "}
           让探索，通向可能
         </span>
         <span>
@@ -466,7 +479,13 @@ function SearchForm({
       className="search-card"
       onSubmit={(e) => {
         e.preventDefault();
-        start(query, filters);
+        const description = query.trim();
+        const filterQuery = `寻找适合${filters.grade}学生参加的${filters.category}相关竞赛。专业：${filters.major}；参赛方式：${filters.participation}；比赛地区：${filters.region}；报名状态：${filters.status}。`;
+        const searchQuery =
+          description.length >= 5
+            ? description
+            : `${filterQuery}${description ? `补充需求：${description}` : ""}`;
+        start(searchQuery, filters);
       }}
     >
       <div className="form-heading">
@@ -479,15 +498,14 @@ function SearchForm({
       <div className="textarea-wrap">
         <textarea
           aria-label="竞赛搜索需求"
+          aria-describedby="search-query-hint"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          required
-          minLength={5}
           maxLength={1500}
-          placeholder="我是大一计算机专业学生，想找近期可以报名的 AI、软件开发类比赛，最好能够个人参加……"
+          placeholder="补充你的偏好（可选），例如：想找适合新手、近期可以报名的比赛"
         />
-        <span>
-          <WandSparkles size={13} /> 用自然语言描述，让 AI 替你探索
+        <span id="search-query-hint">
+          <WandSparkles size={13} /> 可选 · 留空则按下方筛选条件搜索
         </span>
       </div>
       <div className="filter-grid">
