@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "pages": 4,
+      "overflow": false,
+      "exampleFill": "PASS",
+      "unconfiguredError": "PASS"
+    },
+    {
+      "width": 768,
+      "pages": 4,
+      "overflow": false,
+      "exampleFill": "PASS",
+      "unconfiguredError": "PASS"
+    },
+    {
+      "width": 1440,
+      "pages": 4,
+      "overflow": false,
+      "exampleFill": "PASS",
+      "unconfiguredError": "PASS"
+    }
+  ],
+  "consoleErrors": []
+}

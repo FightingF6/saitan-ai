@@ -1,0 +1,149 @@
+{
+  "test_only": true,
+  "real_llm": false,
+  "events": [
+    {
+      "type": "browser_starting",
+      "message": "正在启动隔离的本地浏览器",
+      "payload": {
+        "stage": 2
+      }
+    },
+    {
+      "type": "browser_started",
+      "message": "浏览器已启动，公网访问代理已启用",
+      "payload": {
+        "stage": 2
+      }
+    },
+    {
+      "type": "page_visited",
+      "message": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+      "payload": {
+        "stage": 3,
+        "url": "https://www.bing.com/search?q=2026+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E5%AD%A6%E7%94%9F+%E7%AB%9E%E8%B5%9B+%E6%8A%A5%E5%90%8D+%E9%80%9A%E7%9F%A5&rdr=1&rdrig=51E0C88CC0C5455CA2A7623CEA017863",
+        "title": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+        "visited_count": 1
+      }
+    },
+    {
+      "type": "browser_snapshot",
+      "message": "已更新当前网页截图",
+      "payload": {
+        "url": "https://www.bing.com/search?q=2026+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E5%AD%A6%E7%94%9F+%E7%AB%9E%E8%B5%9B+%E6%8A%A5%E5%90%8D+%E9%80%9A%E7%9F%A5&rdr=1&rdrig=51E0C88CC0C5455CA2A7623CEA017863",
+        "title": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+        "image": "/api/tasks/contract-test/screenshot?v=1"
+      }
+    },
+    {
+      "type": "page_visited",
+      "message": "4C2026通知-中国大学生计算机设计大赛",
+      "payload": {
+        "stage": 3,
+        "url": "https://jsjds.blcu.edu.cn/info/1042/2294.htm",
+        "title": "4C2026通知-中国大学生计算机设计大赛",
+        "visited_count": 2
+      }
+    },
+    {
+      "type": "browser_snapshot",
+      "message": "已更新当前网页截图",
+      "payload": {
+        "url": "https://jsjds.blcu.edu.cn/info/1042/2294.htm",
+        "title": "4C2026通知-中国大学生计算机设计大赛",
+        "image": "/api/tasks/contract-test/screenshot?v=2"
+      }
+    },
+    {
+      "type": "agent_step",
+      "message": "已执行 2 个 Agent 步骤",
+      "payload": {
+        "step": 2
+      }
+    },
+    {
+      "type": "extraction_started",
+      "message": "正在比对赛事字段与网页原文",
+      "payload": {
+        "stage": 4
+      }
+    },
+    {
+      "type": "test_evidence_diagnostic",
+      "candidate": "中国大学生计算机设计大赛",
+      "pages": [
+        {
+          "url": "https://www.bing.com/search?q=2026+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E5%AD%A6%E7%94%9F+%E7%AB%9E%E8%B5%9B+%E6%8A%A5%E5%90%8D+%E9%80%9A%E7%9F%A5&rdr=1&rdrig=51E0C88CC0C5455CA2A7623CEA017863",
+          "text_length": 1459,
+          "name_present": false,
+          "text_excerpt": "跳至内容\n辅助功能反馈\nRewards\n全部AI 模式图片视频地图\n更多\n约 52 个结果\nzhihu.com\nhttps://www.zhihu.com › question\nDeepseek降智了"
+        },
+        {
+          "url": "https://jsjds.blcu.edu.cn/info/1042/2294.htm",
+          "text_length": 1886,
+          "name_present": true,
+          "text_excerpt": "首页\n大赛动态\n往届赛事\n关于大赛\n资料下载\n国赛决赛\n大赛动态\n首页 > 大赛动态 > 正文\n4C2026通知\n发布者：  时间：2026-03-01  浏览：101681\n\n中大计赛函[2026]"
+        }
+      ]
+    },
+    {
+      "type": "agent_step",
+      "message": "已执行 3 个 Agent 步骤",
+      "payload": {
+        "step": 3
+      }
+    },
+    {
+      "type": "agent_step",
+      "message": "已执行 4 个 Agent 步骤",
+      "payload": {
+        "step": 4
+      }
+    }
+  ],
+  "results": [
+    {
+      "name": "中国大学生计算机设计大赛",
+      "edition": null,
+      "category": null,
+      "description": null,
+      "organizer": null,
+      "eligible_grades": null,
+      "eligible_majors": null,
+      "participation_type": null,
+      "team_size": null,
+      "registration_start": null,
+      "registration_deadline": null,
+      "official_url": null,
+      "source_urls": [
+        "https://jsjds.blcu.edu.cn/info/1042/2294.htm"
+      ],
+      "source_published_at": null,
+      "sources": [
+        {
+          "url": "https://jsjds.blcu.edu.cn/info/1042/2294.htm",
+          "title": "4C2026通知-中国大学生计算机设计大赛",
+          "captured_at": "2026-10-18T06:49:44.728402+00:00",
+          "source_type": "高校公告",
+          "verification_status": "原文已比对",
+          "excerpt": "中国大学生计算机设计大赛"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "name",
+          "quote": "中国大学生计算机设计大赛",
+          "source_url": "https://jsjds.blcu.edu.cn/info/1042/2294.htm"
+        }
+      ],
+      "conflicts": [],
+      "registration_status": "待核实",
+      "verification_status": "待核实",
+      "last_verified_at": "2026-10-18T06:49:44.888622+00:00",
+      "eligibility_match": "需确认参赛条件",
+      "match_count": 0,
+      "recommendation_reason": "已找到赛事原文，请结合参赛条件确认适用性。",
+      "id": "1345c803f6bbfca0812fae3f0ff666d2"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "test_only": true,
+  "results": [
+    {
+      "width": 390,
+      "sourceLink": "PASS",
+      "evidenceDetails": "PASS",
+      "cancelState": "PASS (intercepted API)",
+      "filter": "PASS",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sourceLink": "PASS",
+      "evidenceDetails": "PASS",
+      "cancelState": "PASS (intercepted API)",
+      "filter": "PASS",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sourceLink": "PASS",
+      "evidenceDetails": "PASS",
+      "cancelState": "PASS (intercepted API)",
+      "filter": "PASS",
+      "overflow": false
+    }
+  ]
+}

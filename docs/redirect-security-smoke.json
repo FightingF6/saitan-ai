@@ -1,0 +1,7 @@
+{
+  "redirect_host": "httpbin.org",
+  "target": "loopback trap",
+  "proxy_blocked": true,
+  "loopback_hits": 0,
+  "pass": true
+}

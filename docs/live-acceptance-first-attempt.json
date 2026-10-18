@@ -1,0 +1,398 @@
+{
+  "search_task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+  "search": {
+    "id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+    "query": "寻找适合大一学生参加的人工智能相关比赛。",
+    "filters": {
+      "major": "计算机科学与技术",
+      "grade": "大一",
+      "category": "人工智能",
+      "participation": "个人优先",
+      "region": "全国",
+      "status": "报名中优先"
+    },
+    "status": "failed",
+    "created_at": "2026-10-18T07:07:30.731621+00:00",
+    "started_at": "2026-10-18T07:07:30.739013+00:00",
+    "ended_at": "2026-10-18T07:08:27.284930+00:00",
+    "error": "Agent 执行失败，请检查模型密钥、余额、模型兼容性及网络。已有结果已保留。",
+    "config": {
+      "llm_provider": "deepseek",
+      "model": "deepseek-flash",
+      "api_base_url": "https://api.deepseek.com/v1",
+      "max_steps": 25,
+      "timeout_seconds": 300,
+      "max_pages": 15,
+      "default_count": 8,
+      "headless": true,
+      "api_key_configured": true,
+      "browser_mode": "本地 Chromium · 独立会话"
+    },
+    "result_count": 0,
+    "results": [],
+    "events": [
+      {
+        "id": 1,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "task_created",
+        "message": "任务已创建",
+        "payload": {
+          "stage": 0
+        },
+        "created_at": "2026-10-18T07:07:30.735489+00:00"
+      },
+      {
+        "id": 2,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "planning_started",
+        "message": "正在解析需求与筛选条件",
+        "payload": {
+          "stage": 0
+        },
+        "created_at": "2026-10-18T07:07:30.742695+00:00"
+      },
+      {
+        "id": 3,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "planning_completed",
+        "message": "搜索计划已生成，优先查找本届报名通知及高校公告",
+        "payload": {
+          "stage": 1,
+          "keywords": [
+            "2026 人工智能 大学生竞赛 报名通知",
+            "寻找适合大一学生参加的人工智能相关比赛。"
+          ],
+          "page_budget": 15
+        },
+        "created_at": "2026-10-18T07:07:30.748681+00:00"
+      },
+      {
+        "id": 4,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_starting",
+        "message": "正在启动隔离的本地浏览器",
+        "payload": {
+          "stage": 2
+        },
+        "created_at": "2026-10-18T07:07:31.308878+00:00"
+      },
+      {
+        "id": 5,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_started",
+        "message": "浏览器已启动，公网访问代理已启用",
+        "payload": {
+          "stage": 2
+        },
+        "created_at": "2026-10-18T07:07:32.184986+00:00"
+      },
+      {
+        "id": 6,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "page_visited",
+        "message": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+        "payload": {
+          "stage": 3,
+          "url": "https://www.bing.com/search?q=2026+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E5%AD%A6%E7%94%9F+%E7%AB%9E%E8%B5%9B+%E6%8A%A5%E5%90%8D+%E9%80%9A%E7%9F%A5&rdr=1&rdrig=B7EC28EAB0D242899EF5B461B587EE4A",
+          "title": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+          "visited_count": 1
+        },
+        "created_at": "2026-10-18T07:07:45.223212+00:00"
+      },
+      {
+        "id": 7,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_snapshot",
+        "message": "已更新当前网页截图",
+        "payload": {
+          "url": "https://www.bing.com/search?q=2026+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E5%AD%A6%E7%94%9F+%E7%AB%9E%E8%B5%9B+%E6%8A%A5%E5%90%8D+%E9%80%9A%E7%9F%A5&rdr=1&rdrig=B7EC28EAB0D242899EF5B461B587EE4A",
+          "title": "2026 人工智能 大学生 竞赛 报名 通知 - 搜索",
+          "image": "/api/tasks/66103f39-8e0a-43f2-a2be-b3c1c57deff0/screenshot?v=1"
+        },
+        "created_at": "2026-10-18T07:07:45.279828+00:00"
+      },
+      {
+        "id": 8,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "page_visited",
+        "message": "中国大学生计算机设计大赛 2027 通知 人工智能 - 搜索",
+        "payload": {
+          "stage": 3,
+          "url": "https://www.bing.com/search?q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B+2027+%E9%80%9A%E7%9F%A5+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&rdr=1&rdrig=0D720DE8867F47EABDFB6911959C37C1",
+          "title": "中国大学生计算机设计大赛 2027 通知 人工智能 - 搜索",
+          "visited_count": 2
+        },
+        "created_at": "2026-10-18T07:07:53.935906+00:00"
+      },
+      {
+        "id": 9,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_snapshot",
+        "message": "已更新当前网页截图",
+        "payload": {
+          "url": "https://www.bing.com/search?q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B+2027+%E9%80%9A%E7%9F%A5+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&rdr=1&rdrig=0D720DE8867F47EABDFB6911959C37C1",
+          "title": "中国大学生计算机设计大赛 2027 通知 人工智能 - 搜索",
+          "image": "/api/tasks/66103f39-8e0a-43f2-a2be-b3c1c57deff0/screenshot?v=2"
+        },
+        "created_at": "2026-10-18T07:07:53.971621+00:00"
+      },
+      {
+        "id": 10,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 2 个 Agent 步骤",
+        "payload": {
+          "step": 2
+        },
+        "created_at": "2026-10-18T07:07:53.976500+00:00"
+      },
+      {
+        "id": 11,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "page_visited",
+        "message": "中国大学生计算机设计大赛",
+        "payload": {
+          "stage": 3,
+          "url": "https://jsjds.blcu.edu.cn/",
+          "title": "中国大学生计算机设计大赛",
+          "visited_count": 3
+        },
+        "created_at": "2026-10-18T07:08:04.212978+00:00"
+      },
+      {
+        "id": 12,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_snapshot",
+        "message": "已更新当前网页截图",
+        "payload": {
+          "url": "https://jsjds.blcu.edu.cn/",
+          "title": "中国大学生计算机设计大赛",
+          "image": "/api/tasks/66103f39-8e0a-43f2-a2be-b3c1c57deff0/screenshot?v=3"
+        },
+        "created_at": "2026-10-18T07:08:04.257356+00:00"
+      },
+      {
+        "id": 13,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 3 个 Agent 步骤",
+        "payload": {
+          "step": 3
+        },
+        "created_at": "2026-10-18T07:08:04.261233+00:00"
+      },
+      {
+        "id": 14,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "page_visited",
+        "message": "参赛要求-中国大学生计算机设计大赛",
+        "payload": {
+          "stage": 3,
+          "url": "https://jsjds.blcu.edu.cn/gyds1/csyq.htm",
+          "title": "参赛要求-中国大学生计算机设计大赛",
+          "visited_count": 4
+        },
+        "created_at": "2026-10-18T07:08:13.076053+00:00"
+      },
+      {
+        "id": 15,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "browser_snapshot",
+        "message": "已更新当前网页截图",
+        "payload": {
+          "url": "https://jsjds.blcu.edu.cn/gyds1/csyq.htm",
+          "title": "参赛要求-中国大学生计算机设计大赛",
+          "image": "/api/tasks/66103f39-8e0a-43f2-a2be-b3c1c57deff0/screenshot?v=4"
+        },
+        "created_at": "2026-10-18T07:08:13.117741+00:00"
+      },
+      {
+        "id": 16,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 4 个 Agent 步骤",
+        "payload": {
+          "step": 4
+        },
+        "created_at": "2026-10-18T07:08:13.124706+00:00"
+      },
+      {
+        "id": 17,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 5 个 Agent 步骤",
+        "payload": {
+          "step": 5
+        },
+        "created_at": "2026-10-18T07:08:17.671876+00:00"
+      },
+      {
+        "id": 18,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_retry",
+        "message": "上一步未成功，Agent 将在剩余预算内尝试其他方法",
+        "payload": {},
+        "created_at": "2026-10-18T07:08:17.673456+00:00"
+      },
+      {
+        "id": 19,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 6 个 Agent 步骤",
+        "payload": {
+          "step": 6
+        },
+        "created_at": "2026-10-18T07:08:22.706026+00:00"
+      },
+      {
+        "id": 20,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_retry",
+        "message": "上一步未成功，Agent 将在剩余预算内尝试其他方法",
+        "payload": {},
+        "created_at": "2026-10-18T07:08:22.707151+00:00"
+      },
+      {
+        "id": 21,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "agent_step",
+        "message": "已执行 7 个 Agent 步骤",
+        "payload": {
+          "step": 7
+        },
+        "created_at": "2026-10-18T07:08:27.055564+00:00"
+      },
+      {
+        "id": 22,
+        "task_id": "66103f39-8e0a-43f2-a2be-b3c1c57deff0",
+        "type": "task_failed",
+        "message": "Agent 执行失败，请检查模型密钥、余额、模型兼容性及网络。已有结果已保留。",
+        "payload": {
+          "stage": 6
+        },
+        "created_at": "2026-10-18T07:08:27.285889+00:00"
+      }
+    ],
+    "stats": {
+      "visited": 4,
+      "candidates": 0,
+      "verified": 0,
+      "pending": 0
+    }
+  },
+  "export_consistency": "PASS",
+  "sse_replay": "PASS",
+  "cancel": {
+    "id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+    "query": "取消验收测试：寻找人工智能大学生竞赛。",
+    "filters": {
+      "major": "",
+      "grade": "大一",
+      "category": "人工智能",
+      "participation": "不限",
+      "region": "全国",
+      "status": "报名中优先"
+    },
+    "status": "failed",
+    "created_at": "2026-10-18T07:08:46.465196+00:00",
+    "started_at": "2026-10-18T07:08:46.465196+00:00",
+    "ended_at": "2026-10-18T07:08:50.530381+00:00",
+    "error": "Agent 执行失败，请检查模型密钥、余额、模型兼容性及网络。已有结果已保留。",
+    "config": {
+      "llm_provider": "deepseek",
+      "model": "deepseek-flash",
+      "api_base_url": "https://api.deepseek.com/v1",
+      "max_steps": 25,
+      "timeout_seconds": 300,
+      "max_pages": 15,
+      "default_count": 8,
+      "headless": true,
+      "api_key_configured": true,
+      "browser_mode": "本地 Chromium · 独立会话"
+    },
+    "result_count": 0,
+    "results": [],
+    "events": [
+      {
+        "id": 23,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "task_created",
+        "message": "任务已创建",
+        "payload": {
+          "stage": 0
+        },
+        "created_at": "2026-10-18T07:08:46.465196+00:00"
+      },
+      {
+        "id": 24,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "planning_started",
+        "message": "正在解析需求与筛选条件",
+        "payload": {
+          "stage": 0
+        },
+        "created_at": "2026-10-18T07:08:46.470288+00:00"
+      },
+      {
+        "id": 25,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "planning_completed",
+        "message": "搜索计划已生成，优先查找本届报名通知及高校公告",
+        "payload": {
+          "stage": 1,
+          "keywords": [
+            "2026 人工智能 大学生竞赛 报名通知",
+            "取消验收测试：寻找人工智能大学生竞赛。"
+          ],
+          "page_budget": 15
+        },
+        "created_at": "2026-10-18T07:08:46.471519+00:00"
+      },
+      {
+        "id": 26,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "browser_starting",
+        "message": "正在启动隔离的本地浏览器",
+        "payload": {
+          "stage": 2
+        },
+        "created_at": "2026-10-18T07:08:46.495639+00:00"
+      },
+      {
+        "id": 27,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "browser_started",
+        "message": "浏览器已启动，公网访问代理已启用",
+        "payload": {
+          "stage": 2
+        },
+        "created_at": "2026-10-18T07:08:47.156851+00:00"
+      },
+      {
+        "id": 28,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "task_cancelling",
+        "message": "正在停止 Agent 并释放浏览器",
+        "payload": {},
+        "created_at": "2026-10-18T07:08:47.512915+00:00"
+      },
+      {
+        "id": 29,
+        "task_id": "25a1256b-3843-47fa-b700-bdfd4f0d1b73",
+        "type": "task_failed",
+        "message": "Agent 执行失败，请检查模型密钥、余额、模型兼容性及网络。已有结果已保留。",
+        "payload": {
+          "stage": 6
+        },
+        "created_at": "2026-10-18T07:08:50.530911+00:00"
+      }
+    ],
+    "stats": {
+      "visited": 0,
+      "candidates": 0,
+      "verified": 0,
+      "pending": 0
+    }
+  },
+  "settings_restored": true
+}
